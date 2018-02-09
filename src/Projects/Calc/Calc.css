@@ -1,0 +1,96 @@
+.container {
+  background-color: #4f5b66;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+}
+
+.calcContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.calcBody {
+  height: 390px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #79a6c5;
+  box-shadow: 10px 10px 20px grey;
+}
+
+.clacWindow {
+  height: 50px;
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+  box-sizing: border-box;
+  background-color: #c8cfd6;
+  border-radius: 10px;
+}
+
+.digits{
+  font-size: 30px;
+  margin-right: 3px;
+}
+
+.digitsSmall{
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.digitsExtraSmall{
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+.littleDigits {
+  font-size: px;
+  margin-right: 3px;
+}
+
+.buttonsBox {
+  height: 280px;
+  width: 250px;
+  box-sizing: border-box;
+  margin: 25px 25px 0px 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonColumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 16px;
+}
+
+.button {
+  height: 40px;
+  width: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.megaButton {
+  height: 95px;
+  width: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
