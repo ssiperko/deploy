@@ -20,12 +20,13 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const clearConsole = require('react-dev-utils/clearConsole');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
+const poop =  require('react-dev-utils/WebpackDevServerUtils'); 
 const {
   choosePort,
   createCompiler,
   prepareProxy,
   prepareUrls
-} = require('react-dev-utils/WebpackDevServerUtils');
+} = poop;
 const openBrowser = require('react-dev-utils/openBrowser');
 const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');
