@@ -1,5 +1,5 @@
 import React from 'react';
-import {Display} from './ProjectDisplay';
+//import {Display} from './ProjectDisplay';
 import {Link} from 'react-router-dom';
 
 

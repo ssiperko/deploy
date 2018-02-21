@@ -9,32 +9,40 @@ export class Calc extends React.Component{
       solution: false
     }
   }
+  // adds a new digit to the equation string
   addDigit(digit) {
     this.setState((prevState, props) => ({
       displayValue: prevState.displayValue += digit,
+      solution: false
     }))
+    console.log(this.state.equation);
   }
   toggleNegPos(){
     if (this.state.displayValue > -1) {
       this.setState((prevState, props) => ({
-        displayValue: prevState.displayValue * -1
+        displayValue: prevState.displayValue * -1,
+        solution: false
       }))
     } else {
       this.setState((prevState, props) => ({
-        displayValue: Math.abs(prevState.displayValue)
+        displayValue: Math.abs(prevState.displayValue),
+        solution: false
       }))
     }
   }
   addPercent(){
     this.setState((prevState, props) => ({
-      displayValue: prevState.displayValue/100
+      displayValue: prevState.displayValue/100,
+      solution: false
     }))
   }
   createEquation(char){
     this.setState((prevState, props) => ({
       equation: prevState.equation.concat([prevState.displayValue, char]),
-      displayValue: ''
+      displayValue: '',
+      solution: false
     }))
+    console.log(this.state.displayValue);
   }
   displaySolution(){
     this.setState((prevState, props) => ({
@@ -45,7 +53,8 @@ export class Calc extends React.Component{
   clearWindow() {
     this.setState({
       displayValue: '',
-      equation: []
+      equation: [],
+      solution: false
     })
   }
   render(){
